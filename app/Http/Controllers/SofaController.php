@@ -93,12 +93,9 @@ class SofaController extends Controller
         ->where('cart.user_id',$userId)
         ->sum('tables.Price');
 
-        $ctotal= $chairs= DB::table('cart')
-        ->join('chairs','cart.product_id','=','chairs.id')
-        ->where('cart.user_id',$userId)
-        ->sum('chairs.Price');
+        
 
-         return view('ordernow',['total'=>$stotal+$ttotal+$ctotal]);
+         return view('ordernow',['total'=>$stotal+$ttotal]);
     }
 
     function orderPlace(Request $req)

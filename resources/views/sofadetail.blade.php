@@ -3,7 +3,7 @@
 <div class="container">
 <div class="row">
 <div class="col-sm-6">
-<img class="tabledetail-img" src="{{$home['Gallery']}}" alt="">
+<img class="sofadetail-img" src="{{$home['Gallery']}}" alt="">
 </div>
 <div class="col-sm-6">
 <a href="/home">Go Back</a>

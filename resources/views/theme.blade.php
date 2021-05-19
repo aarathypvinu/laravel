@@ -41,7 +41,7 @@
     .trending-wrapper{
         margin: 30px;
     }
-    .tabledetail-img{
+    .sofadetail-img{
         height: 500px;
     }
     .sofadropview-img{

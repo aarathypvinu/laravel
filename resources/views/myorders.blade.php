@@ -10,9 +10,9 @@
             @foreach($sorders as $item)
             <div class=" row searched-item cart-list-devider">
              <div class="col-sm-3">
-                <a href="mobiledetail/{{$item->id}}">
+                <a href="sofadetail/{{$item->id}}">
                 
-                    <img class="trending-image" src="{{$item->Gallery}}">
+                    <img height="100px" width="200px" class="trending-image" src="{{$item->Gallery}}">
                   </a>
              </div>
              <div class="col-sm-4">
@@ -32,8 +32,8 @@
             @foreach($torders as $item)
             <div class=" row searched-item cart-list-devider">
              <div class="col-sm-3">
-                <a href="laptopdropview/{{$item->id}}">
-                    <img class="trending-image" src="{{$item->Gallery}}">
+                <a href="sofadropview/{{$item->id}}">
+                    <img height="100px" width="200px" class="trending-image" src="{{$item->Gallery}}">
                   </a>
              </div>
              <div class="col-sm-4">

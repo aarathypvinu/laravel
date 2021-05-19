@@ -2,13 +2,11 @@
 @section("content")
 <div class="container">
 <div class="row">
-<div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+<div class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3"></div>
+<div class="col col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
 <div class="card">
-                <img height="500px" and width="100px" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSw6Z5DuaoesUbPvuxCJOWEEU1XWmApQcqtRl1zJS0Wh6LYwAgTh_PueTUxvdprBGE6wrKRGIPr0bAg_PdtJ9g8KpvBPhVZJ37xIB6vbOg&usqp=CAE" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"></h5>
-                  <p class="card-text"></p>
-                </div>
+                <img height="300px" and width="300px" src="https://5.imimg.com/data5/GH/XS/MY-41616333/stylish-sofa-set-500x500.jpg" class="card-img-top" alt="...">
+                
               </div>
 </div>
 </div>
