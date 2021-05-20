@@ -9,7 +9,6 @@ use App\Http\Controllers\DispchairController;
 use App\Http\Controllers\DisptableController;
 use App\Http\Controllers\YouraccountController;
 use App\Http\Controllers\MainController;
-
 use App\Http\Controllers\SofaController;
 use App\Http\Controllers\ChairController;
 use App\Http\Controllers\TableController;
@@ -41,7 +40,6 @@ route::group(['middleware'=>['AuthCheck']],function(){
     route::get('/sofa',[DispsofaController::class,'index']);
     route::get('/chair',[DispchairController::class,'index']);
     route::get('/table',[DisptableController::class,'index']);
-    Route::get("sofadetail/{id}",[SofaController::class,'sofadetail']);
     Route::get("sofadropview/{id}",[SofaController::class,'sofadropview']);
     Route::get("chairdropview/{id}",[ChairController::class,'chairdropview']);
     Route::get("tabledropview/{id}",[TableController::class,'tabledropview']);

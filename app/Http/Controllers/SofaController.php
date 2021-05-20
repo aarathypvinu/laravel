@@ -18,12 +18,7 @@ class SofaController extends Controller
         
         return view('home',['sofas'=>$data]);
     }
-    function sofadetail($id)
-    {
-         $data= Sofa::find($id);
-         return view('sofadetail',['home'=>$data]);
-        
-    }
+    
     function sofadropview($id)
     {
          $data= Sofa::find($id);
