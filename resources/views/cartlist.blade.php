@@ -11,7 +11,7 @@
             @foreach($sofas as $item)
             <div class="row">
             <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                <a href="sofadetail/{{$item->id}}">
+                <a href="sofadropview/{{$item->id}}">
                     <img height="100px" width="200px" class="trending-imagee" src="{{$item->Gallery}}">
                   </a>
              </div>

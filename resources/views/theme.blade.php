@@ -42,7 +42,7 @@
         margin: 30px;
     }
     .sofadetail-img{
-        height: 500px;
+        height: 350px;
     }
     .sofadropview-img{
         height: 400px;

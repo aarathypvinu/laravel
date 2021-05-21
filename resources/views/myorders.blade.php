@@ -32,7 +32,7 @@
             @foreach($torders as $item)
             <div class=" row searched-item cart-list-devider">
              <div class="col-sm-3">
-                <a href="sofadropview/{{$item->id}}">
+                <a href="tabledropview/{{$item->id}}">
                     <img height="100px" width="200px" class="trending-image" src="{{$item->Gallery}}">
                   </a>
              </div>

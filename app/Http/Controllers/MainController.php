@@ -72,5 +72,36 @@ class MainController extends Controller
         $data=['LoggedUserInfo'=>Admin::where('id','=',session('LoggedUser'))->first()];
         return view('admin.youraccount',$data);
     }
+    public function edit($id)
+    {
+        $users=Admin::find($id);
+        return view('auth.edit',compact('users'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $admin=Admin::find($id);
+
+        $getusername= request('username');
+        $getName= request('name');
+        $getEmail= request('email');
+        $getMobile= request('mobile');
+        $getAddress= request('address');
+        $getPassword= request('password');
+      
+
+        $admin->username=$getusername;
+        $admin->name=$getName;
+        $admin->email=$getEmail;
+        $admin->mobile=$getMobile;
+        $admin->address=$getAddress;
+        $admin->password=$getPassword;
+
+        $admin->save();
+
+        return redirect('/admin/youraccount');
+
+    }
+
 }
  

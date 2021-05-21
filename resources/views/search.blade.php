@@ -9,22 +9,22 @@
             
             @foreach($tables as $item)
             <div class="searched-item">
-              <a href="tabledetail/{{$item['id']}}">
+              <a href="tabledropview/{{$item['id']}}">
               <img class="trending-image" src="{{$item['Gallery']}}">
               <div class="">
                 <h2>{{$item['Model']}}</h2>
-                <h5>{{$item['Memory']}}</h5>
+                <h5>{{$item['Material']}}</h5>
               </div>
             </a>
             </div>
             @endforeach
-            @foreach($sofa as $items)
+            @foreach($sofas as $item)
             <div class="searched-item">
               <a href="sofadropview/{{$item['id']}}">
-              <img class="trending-image" src="{{$items['Gallery']}}">
+              <img class="trending-image" src="{{$item['Gallery']}}">
               <div class="">
-                <h2>{{$items['Model']}}</h2>
-                <h5>{{$items['material']}}</h5>
+                <h2>{{$item['Model']}}</h2>
+                <h5>{{$item['Material']}}</h5>
               </div>
             </a>
             </div>

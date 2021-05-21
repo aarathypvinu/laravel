@@ -79,7 +79,7 @@ class SofaController extends Controller
     {
         $userId=Session::get('id',session('LoggedUser'));
          $stotal= $sofas= DB::table('cart')
-         ->join('sofas','cart.product_id','=','sofas.id')
+        ->join('sofas','cart.product_id','=','sofas.id')
         ->where('cart.user_id',$userId)
         ->sum('sofas.Price');
 
@@ -135,7 +135,17 @@ class SofaController extends Controller
        
          
     }
+    function search(Request $req)
+    {
+       $sofadata= Sofa::where('Model', 'like', '%'.$req->input('query').'%')
+       ->get();
 
+        $tabledata= Table::where('Model', 'like', '%'.$req->input('query').'%')
+        ->get();
+
+       
+        return view('search',['sofas'=>$sofadata],['tables'=>$tabledata]);
+    }
 
 
 

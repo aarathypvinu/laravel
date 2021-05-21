@@ -36,6 +36,8 @@ route::group(['middleware'=>['AuthCheck']],function(){
     route::get('/admin/youraccount',[MainController::class,'youraccount']);
     route::get('/auth/register',[MainController::class,'register'])->name('auth.register');
     route::get('/aboutus',[AboutusController::class,'create']);
+    route::get('/admin/{id}/auth/edit',[MainController::class,'edit']);
+    route::post('/usereditprocess/{id}',[MainController::class,'update']);
     route::get('/contactus',[ContactusController::class,'create']);
     route::get('/sofa',[DispsofaController::class,'index']);
     route::get('/chair',[DispchairController::class,'index']);
@@ -49,4 +51,5 @@ route::group(['middleware'=>['AuthCheck']],function(){
     Route::get("ordernow",[SofaController::class,'orderNow']); 
     Route::post("orderplace",[SofaController::class,'orderPlace']);
     Route::get("myorders",[SofaController::class,'myOrders']);
-});
+    Route::get("search",[SofaController::class,'search']);
+}); 
