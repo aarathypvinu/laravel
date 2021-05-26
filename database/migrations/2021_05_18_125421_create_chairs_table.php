@@ -14,7 +14,6 @@ class CreateChairsTable extends Migration
     public function up()
     {
         Schema::create('chairs', function (Blueprint $table) {
-            $table->id();
             $table->string("Model");
             $table->string("Description");
             $table->string("Material");
