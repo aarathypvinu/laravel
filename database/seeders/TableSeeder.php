@@ -78,7 +78,8 @@ class TableSeeder extends Seeder
                 'Gallery'=>"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSHk5pp4xX_M1-x5Ff9PkNriLiUVt_Fm0zoEtuCcp5OeHJ3YKiw6GjuksbThyMDl_nK7WJrH-9dnKheRQxhYzG8owY_IlVvhw9rHW42loWhvACnGw&usqp=CAE"
             ]
             
+        ]); 
            
-            ]); 
+        
     }
 }

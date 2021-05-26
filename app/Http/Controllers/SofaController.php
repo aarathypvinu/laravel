@@ -87,13 +87,9 @@ class SofaController extends Controller
         ->join('tables','cart.product_id','=','tables.id')
         ->where('cart.user_id',$userId)
         ->sum('tables.Price');
-
-        
-
          return view('ordernow',['total'=>$stotal+$ttotal]);
     }
-
-    function orderPlace(Request $req)
+      function orderPlace(Request $req)
     {
         $userId=Session::get('id',session('LoggedUser'));
         $allCart= Cart::where('user_id',$userId)->get();
@@ -135,6 +131,8 @@ class SofaController extends Controller
        
          
     }
+
+
     function search(Request $req)
     {
        $sofadata= Sofa::where('Model', 'like', '%'.$req->input('query').'%')

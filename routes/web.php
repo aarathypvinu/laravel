@@ -31,10 +31,12 @@ route::get('/auth/logout',[MainController::class,'logout'])->name('auth.logout')
 
 route::get('/',[MainController::class,'login'])->name('auth.login');
 
+route::get('/auth/register',[MainController::class,'register'])->name('auth.register');
+
 route::group(['middleware'=>['AuthCheck']],function(){
     route::get('/home',[SofaController::class,'index']);
     route::get('/admin/youraccount',[MainController::class,'youraccount']);
-    route::get('/auth/register',[MainController::class,'register'])->name('auth.register');
+   
     route::get('/aboutus',[AboutusController::class,'create']);
     route::get('/admin/{id}/auth/edit',[MainController::class,'edit']);
     route::post('/usereditprocess/{id}',[MainController::class,'update']);

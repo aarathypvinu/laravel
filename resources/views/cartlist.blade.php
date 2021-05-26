@@ -6,7 +6,7 @@
         <div class="trending-wrapperr">
             <h1><b>Cart Products</h1>
             
-            <a class="btn btn-success button" href="ordernow">Order Now</a>
+            
             <a href="/home">Go Back</a> <br> <br>
             @foreach($sofas as $item)
             <div class="row">
@@ -30,7 +30,7 @@
              </div>
              <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
              <div class="remove">
-                <a href="/removecart/{{$item->cart_id}}" class="btn btn-warning" >Remove from Cart</a>
+                <a href="/removecart/{{$item->cart_id}}" class="btn btn-secondary" >Remove from Cart</a>
                 <br>
              </div>
              </div>
@@ -55,7 +55,7 @@
              </div>
              <div class="colcol-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
              <div class="remove">
-                <a href="/removecart/{{$item->cart_id}}" class="btn btn-warning" >Remove from Cart</a>
+                <a href="/removecart/{{$item->cart_id}}" class="btn btn-secondary" >Remove from Cart</a>
                 <br>
              </div>
             </div>
