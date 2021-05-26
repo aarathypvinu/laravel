@@ -19,7 +19,7 @@ class CreateChairsTable extends Migration
             $table->string("Description");
             $table->string("Material");
             $table->string("Dimension_inch");
-            $table->string("Price");
+            $table->integer("Price");
             $table->string("Gallery");
             $table->timestamps();
         });
