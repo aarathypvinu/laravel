@@ -24,9 +24,9 @@ if(Session::has('LoggedUser'))
             Products
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/chair">Chair</a></li>
+           
             <li><a class="dropdown-item" href="/sofa">Sofa</a></li>
-            <li><a class="dropdown-item" href="/table">Table</a></li>
+            <li><a class="dropdown-item" href="/table">Tables and chairs</a></li>
           </ul>
         </li>
         <li class="nav-item">

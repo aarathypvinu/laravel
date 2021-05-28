@@ -2,7 +2,7 @@
 @section("content")
 <div class="container">
 <div class="trending-wrapper">
-        <h1><b>Tables</h1>
+        <h1><b>Tables and Chairs</h1>
         <br><br>
         @foreach($tables as $item)
         <div class="trending-item">

@@ -106,7 +106,7 @@ class SofaController extends Controller
              Cart::where('user_id',$userId)->delete(); 
          }
          $req->input();
-         return redirect('/home');
+         return redirect('/myorders');
     }
 
     function myOrders()
@@ -122,11 +122,7 @@ class SofaController extends Controller
          ->where('orders.user_id',$userId)
          ->get();
 
-        $corders= DB::table('orders')
-         ->join('chairs','orders.product_id','=','chairs.id')
-         ->where('orders.user_id',$userId)
-         ->get();
-        
+    
          return view('myorders',['sorders'=>$sorders],['torders'=>$torders]);
        
          

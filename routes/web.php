@@ -12,6 +12,7 @@ use App\Http\Controllers\MainController;
 use App\Http\Controllers\SofaController;
 use App\Http\Controllers\ChairController;
 use App\Http\Controllers\TableController;
+use App\Http\Controllers\FAdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -55,3 +56,31 @@ route::group(['middleware'=>['AuthCheck']],function(){
     Route::get("myorders",[SofaController::class,'myOrders']);
     Route::get("search",[SofaController::class,'search']);
 }); 
+Route::get('/login', function () {
+    return view('login');
+});
+Route::get('/logout', function () {
+    Session::forget('user');
+    return redirect('login');
+});
+
+
+Route::post("/login",[FAdminController::class,'login']);
+Route::get("/home1",[FAdminController::class,'create']);
+
+Route::get("/addsofa",[FAdminController::class,'addSofa']);
+Route::post("/sofaread",[FAdminController::class,'store']);
+Route::get("/viewallsofas",[FAdminController::class,'indexsofa']);
+Route::get('/sofa/{id}/editsofa', [FAdminController::class,'editsofa']);
+Route::post('/sofaeditprocess/{id}', [FAdminController::class,'updatesofa']);
+Route::get('/sofa/{id}/delete', [FAdminController::class,'sofadelete']);
+Route::post('/sofadeleteprocess/{id}',[FAdminController::class,'destroysofa']);
+
+Route::get("/addtc",[FAdminController::class,'addTc']);
+Route::post("/tcread",[FAdminController::class,'storetc']);
+Route::get("/viewalltc",[FAdminController::class,'indextc']);
+Route::get('/Table/{id}/editTable', [FAdminController::class,'edittc']);
+Route::post('/tceditprocess/{id}', [FAdminController::class,'updatetc']);
+Route::get('/Table/{id}/delete', [FAdminController::class,'Tcdelete']);
+Route::post('/tcdeleteprocess/{id}',[FAdminController::class,'destroytc']);
+
