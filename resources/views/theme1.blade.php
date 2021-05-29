@@ -34,9 +34,7 @@
             <li><a class="dropdown-item" href="/viewalltc">Tables and chairs</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">View Customers</a>
-        </li>
+        
       </ul>
       <ul class="navbar-nav  mb-2 mb-lg-xl-xxl-0 navbar-right">
         
