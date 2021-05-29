@@ -1,16 +1,15 @@
 @extends("theme1")
 @section("content1")
 
-
 <div class="container">
 <div class="row">
 
 
-<div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+<div class="col col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
 <br><br>
 <h2><center>Sofa</H2>
 <br><br>
-  <table class="table table-borderless">
+  <table class="table table-hover">
   
      <tr>
          <th> MODEL </th>

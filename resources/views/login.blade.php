@@ -8,8 +8,9 @@
     <title>Admin Log in</title>
 </head>
 <body>
+<div class="container">
     <div class="login">
-    <div class="row" style ="margin-top:170px">
+    <div class="row" style ="margin-top:160px">
     <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
     <br> 
     <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
@@ -45,7 +46,7 @@
     </div></div>
     </div>
     <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
-
+    </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
 </body> 

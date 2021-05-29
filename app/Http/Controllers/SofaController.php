@@ -34,7 +34,7 @@ class SofaController extends Controller
            $cart->user_id=$req->session()->get('id',session('LoggedUser'));
            $cart->product_id=$req->product_id;
            $cart->save();
-           return redirect('/home');
+           return redirect('/cartlist');
         }
         else
         {
@@ -144,5 +144,9 @@ class SofaController extends Controller
 
 
 
+
+
+
+    
 
 }

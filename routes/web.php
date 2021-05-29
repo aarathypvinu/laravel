@@ -37,7 +37,6 @@ route::get('/auth/register',[MainController::class,'register'])->name('auth.regi
 route::group(['middleware'=>['AuthCheck']],function(){
     route::get('/home',[SofaController::class,'index']);
     route::get('/admin/youraccount',[MainController::class,'youraccount']);
-   
     route::get('/aboutus',[AboutusController::class,'create']);
     route::get('/admin/{id}/auth/edit',[MainController::class,'edit']);
     route::post('/usereditprocess/{id}',[MainController::class,'update']);
@@ -55,6 +54,8 @@ route::group(['middleware'=>['AuthCheck']],function(){
     Route::post("orderplace",[SofaController::class,'orderPlace']);
     Route::get("myorders",[SofaController::class,'myOrders']);
     Route::get("search",[SofaController::class,'search']);
+
+    
 }); 
 Route::get('/login', function () {
     return view('login');
@@ -83,4 +84,7 @@ Route::get('/Table/{id}/editTable', [FAdminController::class,'edittc']);
 Route::post('/tceditprocess/{id}', [FAdminController::class,'updatetc']);
 Route::get('/Table/{id}/delete', [FAdminController::class,'Tcdelete']);
 Route::post('/tcdeleteprocess/{id}',[FAdminController::class,'destroytc']);
+
+
+
 

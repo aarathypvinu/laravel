@@ -14,7 +14,7 @@ class CreateSofasTable extends Migration
     public function up()
     {
         Schema::create('sofas', function (Blueprint $table) {
-            $table->id()->startingValue(100);
+            $table->id()->startingValue(101);
             $table->string("Model");
             $table->string("Description");
             $table->string("Material");
