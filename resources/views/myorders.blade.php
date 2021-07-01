@@ -5,7 +5,7 @@
 <div class="order-details">
 <h1><b>My Orders </h1><br>
      <div class="col-sm-10">
-       
+     <div style="text-align:center"><div id="hide"><button id="hide" class="btn btn-outline-warning" onclick="window.print()">Print</button></div>
             
             @foreach($sorders as $item)
             <div class=" row searched-item cart-list-devider">
@@ -49,7 +49,9 @@
              </div>
             
             </div>
+            
             @endforeach
+            <br>
             
           </div>
 

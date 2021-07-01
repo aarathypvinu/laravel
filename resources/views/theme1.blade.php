@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
 </head>
+
 <body>
+
+</style>
+<div id="hide">
 <nav class="navbar navbar-expand-lg navbar-light bg-danger">
   <div class="container-fluid">
     <a class="navbar-brand" href="/home1">Furnitureland</a>

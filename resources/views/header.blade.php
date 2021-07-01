@@ -7,6 +7,7 @@ if(Session::has('LoggedUser'))
 }
 
 ?>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-danger">
   <div class="container-fluid">
     <a class="navbar-brand" href="/home">Furnitureland</a>
